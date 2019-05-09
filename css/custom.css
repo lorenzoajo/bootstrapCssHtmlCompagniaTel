@@ -52,6 +52,10 @@ a{
     background-color: black;
 }
 
+.navbarPointer:hover{
+    cursor:pointer;
+}
+
 @media only screen and (max-width: 800px) {
     #wrapper{
         /*margin-bottom: -150px;*/

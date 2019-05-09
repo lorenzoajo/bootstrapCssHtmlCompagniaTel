@@ -39,9 +39,38 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Profilo <span class="sr-only">(current)</span></a></li>
+            <li class="active "><a href="#">Profilo <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Offerte Attive</a></li>
-            <li><a href="#">Disattiva Account</a></li>
+            <li><a class="navbarPointer" data-toggle="modal" data-target="#cancelModal">Disattiva Account</a></li>
+            <!--Modal cancel-->
+            <div>
+              <div class="modal fade " id="cancelModal">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 class="modal-title ">Disattiva Account</h3>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-header">
+                      <form role="form" action="">
+                        <div class="divCentratori">Sei sicuro di voler disattivare il tuo Account?</div>
+
+                        <hr>
+                        <div class="footer">
+                          <a style="color:blue" href="./index.html">(link veloce)</a>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Non ancora</button>
+                          <a href="#" class="btn btn-danger" role="button">Si</a>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fine Modal cancella-->
           </ul>
 
           <form class="navbar-form navbar-right">
@@ -52,7 +81,7 @@
             <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#exitModal" role="button">Esci</a>
 
 
-            <!--Modal-->
+            <!--Modal Exit-->
             <div>
               <div class="modal fade " id="exitModal">
                 <div class="modal-dialog modal-sm">
