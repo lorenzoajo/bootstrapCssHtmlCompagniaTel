@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+
 body, html{
     margin: 0;
     height: 100%;
+    font-family: 'Cabin', sans-serif;
 }
 th{
     text-align: center;
