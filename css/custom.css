@@ -50,6 +50,9 @@ a{
 .centraTable{
     text-align: center;
 }
+.centraPdf{
+    text-align: center;   
+}
 
 .blackmio{
     background-color: black;
