@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Admin</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+  <div id="wrapper">
+
+    <nav class="navbar navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar blackmio"></span>
+            <span class="icon-bar blackmio"></span>
+            <span class="icon-bar blackmio"></span>
+          </button>
+          <a class="navbar-brand" href="#">Compagnia Telefonica</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Profilo <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Offerte Attive</a></li>
+            <li><a href="#">Disattiva Account</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right">
+
+
+            <a style="color:blue" href="./index.html">(link ad Index)</a>
+
+            <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#exitModal" role="button">Esci</a>
+
+
+            <!--Modal-->
+            <div>
+              <div class="modal fade " id="exitModal">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h3 class="modal-title">Esci</h3>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-header">
+                      <form role="form" action="">
+                        <div class="divCentratori">Vuoi uscire dal tuo profilo?</div>
+
+                        <hr>
+                        <div class="footer">
+                          <a style="color:blue" href="./index.html">(link veloce)</a>
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Non ancora</button>
+                          <a href="#" class="btn btn-success" role="button">Si</a>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--fine Modal-->
+
+            </ul>
+
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--corpo-->
+
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <h1>Il tuo profilo</h1>
+          <table class="table centraTable">
+            <tr>
+              <th>nome</th>
+              <th>GB</th>
+              <th>Minuti</th>
+              <th>SMS</th>
+              <th>Prezzo €</th>
+            </tr>
+            <tr>
+              <td>bassa</td>
+              <td>5</td>
+              <td>100</td>
+              <td>100</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>media</td>
+              <td>16</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>alta</td>
+              <td>30</td>
+              <td>ill.</td>
+              <td>ill.</td>
+              <td>10</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fine #wrapper-->
+  <div class="footerP container-fluid ">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Seguici</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Termini e Condizioni</h3>
+            <a class="linkTermini" href="#">Termini e condizioni</a>
+            <a class="linkTermini" href="#">Informazioni legali</a>
+            <a class="linkTermini" href="#">Contratto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--fine corpo-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+body, html{
+    margin: 0;
+    height: 100%;
+}
+th{
+    text-align: center;
+}
+
+.divCentratori{
+    text-align: center;
+    margin: auto;
+}
+a{
+    margin-top: 0%;
+    padding-right:15px; 
+}
+#wrapper{
+    min-height: 100%;
+    height: auto;
+    margin:     0px auto;
+    padding:    0px auto;
+    background: url('../sfondo.jpg');
+    /*background-repeat: no-repeat;*/
+}
+
+.footerP{
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+    background-color: darkgrey;
+    text-align: center;
+
+    height: 50px;
+
+}
+.divBordati{
+    border: 5px solid darkgrey;
+    padding: 2.5%;
+}
+
+.linkTermini{
+    color: black;
+
+}
+.centraTable{
+    text-align: center;
+}
+
+.blackmio{
+    background-color: black;
+}
+
+@media only screen and (max-width: 800px) {
+    #wrapper{
+        /*margin-bottom: -150px;*/
+    }
+    .footerP{
+        height: 150px;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    #wrapper{
+        margin-bottom: -75px;
+    }
+    .footerP{
+        height: 75px;
+    }
+}
+  
